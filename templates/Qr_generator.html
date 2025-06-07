@@ -13,11 +13,11 @@
 
     </nav>
 
-    <div class="container mt-5 p-3" style="width: 300px; border: 1px solid blue">
+    <div class="container mt-5 p-3" style="width: 300px; border: 2px dashed black">
         <form action="{% url 'Qr_generator' %}" method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit" class="btn btn-primary mx-5">Generate</button>
+            <button type="submit" class="btn btn-primary ">Generate</button>
         </form>
     </div>
 </body>
